@@ -1,11 +1,11 @@
 # Habanero's Marketplace
 
-# Wireframe
+## Wireframe
 
-# Team Expectations
+## Team Expectations
 
-# Overview
+## Overview
 
-# MVP
+## MVP
 
-# Post-MVP
+## Post-MVP
