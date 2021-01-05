@@ -44,6 +44,7 @@ A full stack online marketplace app for hot sauce enthusiasts. Users can create 
 - Landing Screen `Incomplete`
 - Listing Screen `Incomplete`
 - Detail Screen `Incomplete`
+- Edit/Create Screen `Incomplete`
 
 ### Server (Back End)
 
