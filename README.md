@@ -20,10 +20,10 @@ A full stack online marketplace app for hot sauce enthusiasts. Users can create 
 
 ### Planning
 
-- Have a thoroughly documented Team Expectations Google document. >Complete
-- Have a thoroughly developed, beautiful README.md file. >In Progress
-- Take time for each team member to discuss where they feel strongest and weakest, in terms of coding ability. >Complete
-- Create a Whimsical document to convey the data flow between your front-end and back-end, with component hierarchy included. >Complete
+- Have a thoroughly documented Team Expectations Google document. `Complete`
+- Have a thoroughly developed, beautiful README.md file. `In Progress`
+- Take time for each team member to discuss where they feel strongest and weakest, in terms of coding ability. `Complete`
+- Create a Whimsical document to convey the data flow between your front-end and back-end, with component hierarchy included. `Complete`
 
 ### Collaboration
 
@@ -34,46 +34,46 @@ A full stack online marketplace app for hot sauce enthusiasts. Users can create 
 
 ### Client (Front End)
 
-- Have a working, interactive React app, built using npx create-react-app client >Incomplete
-- Have at least 6 separate, rendered components in an organized and understandable React file structure. >Incomplete
-- Utilize functional and class React components appropriately. >Incomplete
-- Use only React for DOM Manipulation. >Incomplete
-- Consume data from your API, and render that data in your components. >Incomplete
-- Utilize React Router, for client-side routing. >Incomplete
-- Authentication >Incomplete
-- Landing Screen >Incomplete
-- Listing Screen >Incomplete
-- Detail Screen >Incomplete
+- Have a working, interactive React app, built using npx create-react-app client `Incomplete`
+- Have at least 6 separate, rendered components in an organized and understandable React file structure. `Incomplete`
+- Utilize functional and class React components appropriately. `Incomplete`
+- Use only React for DOM Manipulation. `Incomplete`
+- Consume data from your API, and render that data in your components. `Incomplete`
+- Utilize React Router, for client-side routing. `Incomplete`
+- Authentication `Incomplete`
+- Landing Screen `Incomplete`
+- Listing Screen `Incomplete`
+- Detail Screen `Incomplete`
 
 ### Server (Back End)
 
-- Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. >Incomplete
-- Authentication >Incomplete
+- Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. `Incomplete`
+- Authentication `Incomplete`
 
 ### Styling
 
-- Be styled with CSS. >Incomplete
-- Use flexbox (display: flex) or CSS Grid. >Incomplete
-- Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile). >Incomplete
+- Be styled with CSS. `Incomplete`
+- Use flexbox (display: flex) or CSS Grid. `Incomplete`
+- Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile). `Incomplete`
 
 ### Linting
 
-- Indent properly. >In Progress
-- Utilize high-quality, semantic variable names. >In Progress
-- Follow camelCase and kebab-case conventions. >In Progress
-- Remove unnecessary boilerplate React files and code. >In Progress
-- Remove all console.log()s and commented out code (functional notes/comments are okay). >Incomplete
+- Indent properly. In Progress
+- Utilize high-quality, semantic variable names. `In Progress`
+- Follow camelCase and kebab-case conventions. `In Progress`
+- Remove unnecessary boilerplate React files and code. `In Progress`
+- Remove all console.log()s and commented out code (functional notes/comments are okay). `Incomplete`
 
 ### Deployment
 
-- Deploy the fully functional front-end via Netlify. >Incomplete
-- Deploy the back-end via Heroku. >Incomplete
-- Deploy the MongoDB database on MongoDB Atlas. >Incomplete
+- Deploy the fully functional front-end via Netlify. `Incomplete`
+- Deploy the back-end via Heroku. `Incomplete`
+- Deploy the MongoDB database on MongoDB Atlas. `Incomplete`
 
 ### Procedural
 
-- Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50. >In Progress
-- Use effective and safe branching and merging processes. >In Progress
+- Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50. `In Progress`
+- Use effective and safe branching and merging processes. `In Progress`
 
 ## Post-MVP
 
