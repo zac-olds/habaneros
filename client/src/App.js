@@ -51,19 +51,19 @@ function App() {
         </Route>
 
         {/* PRODUCT DETAIL */}
-        <Route path="/products/:id">
+        <Route exact path="/products/:id">
           <ProductDetail
           user={user}
           />
         </Route>
 
         {/* PRODUCT CREATE */}
-        <Route path="/add-product">
+        <Route exact path="/add-product">
           {user ? <ProductCreate user={user} /> : <Redirect to="/sign-up"/>}
         </Route>
 
         {/* PRODUCT EDIT */}
-        <Route path="/products/:id/edit">
+        <Route exact path="/products/:id/edit">
           {user ? <ProductEdit user={user} /> : <Redirect to="/" />}
         </Route>
 
