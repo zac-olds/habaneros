@@ -38,7 +38,7 @@ const signUp = async (req, res) => {
 const signIn = async (req, res) => {
   try {
     const { username, password } = req.body;
-    const user = await User.findOneAndDelete({ username: username });
+    const user = await User.findOne({ username: username });
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
         username: user.username,
