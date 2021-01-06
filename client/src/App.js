@@ -10,7 +10,7 @@ import SignOut from "./screens/SignOut/SignOut";
 
 // DEPENDENCIES
 import { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
 
 // STYLING
@@ -59,7 +59,7 @@ function App() {
 
         {/* PRODUCT CREATE */}
         <Route path="/add-product">
-          {user ? <ProductCreate user={user} /> : <Redirect path="/sign-up"/>}
+          {user ? <ProductCreate user={user} /> : <Redirect to="/sign-up"/>}
         </Route>
 
         {/* PRODUCT EDIT */}
