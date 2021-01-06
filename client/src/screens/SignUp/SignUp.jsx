@@ -1,6 +1,10 @@
-import React, { memo } from 'react';
+import React, { useState } from 'react'
+import './SignUp.css'
+import { signUp, signIn } from '../../services/users'
+import { useHistory } from "react-router-dom"
 
-(props) => {
+
+const SignUp = (props) => {
 
   const history = useHistory()
 
