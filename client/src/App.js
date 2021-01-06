@@ -5,7 +5,7 @@ import ProductDetail from "./screens/ProductDetail/ProductDetail";
 import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import SignIn from "./screens/SignIn/SignIn";
-import SignUp from "./screens/Signup/SignUp";
+import SignUp from "./screens/SignUp/SignUp";
 import SignOut from "./screens/SignOut/SignOut";
 
 // DEPENDENCIES
@@ -18,47 +18,75 @@ import './App.css';
 
 
 function App() {
+  // Set the state for user authentication (sign up, sign in, etc)
+  const [user, setUser] = useState(null);
+
+  // Verify user/set user for use in sign up, sign in etc.
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser();
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser();
+  }, [])
+
+  // Set up function for sign out
+  const clearUser = () => setUser(null);
+
   return (
     <div className="App">
       <Switch>
         {/* LANDING SCREEN/HOME */}
         <Route exact path="/">
-          {/* <Home/> */}
+          <Home
+          user={user}
+          />
         </Route>
 
         {/* PRODUCTS LIST */}
         <Route exact path="/products">
-          {/* <Products/> */}
+          <Products
+          user={user}
+          />
         </Route>
 
         {/* PRODUCT DETAIL */}
         <Route path="/products/:id">
-          {/* <ProductDetail/> */}
+          <ProductDetail
+          user={user}
+          />
         </Route>
 
         {/* PRODUCT CREATE */}
         <Route path="/add-product">
-          {/* <ProductCreate/> */}
+          {user ? <ProductCreate user={user} /> : <Redirect path="/sign-up"/>}
         </Route>
 
         {/* PRODUCT EDIT */}
         <Route path="/products/:id/edit">
-          {/* <ProductEdit/> */}
+          {user ? <ProductEdit user={user} /> : <Redirect to="/" />}
         </Route>
 
         {/* SIGN IN */}
-        <Route path="/sign-up">
-          {/* <SignIn/> */}
+        <Route path="/sign-in">
+          <SignIn
+            setUser={setUser}
+          />
         </Route>
 
         {/* SIGN UP */}
         <Route path="/sign-up">
-          {/* <SignUp/> */}
+          <SignUp
+            setUser={setUser}
+          />
         </Route>
 
         {/* SIGN OUT */}
         <Route path="/sign-out">
-          {/* <SignOut/> */}
+          <SignOut
+            setUser={setUser}
+            clearUser={clearUser}
+          />
         </Route>
       </Switch>
     </div>
