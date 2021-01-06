@@ -1,9 +1,7 @@
 .products {
-  width: 90vw;
+  width: 85vw;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
 }
