@@ -14,26 +14,46 @@
   font-size: 40px;
   letter-spacing: 1px;
   padding: 5px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 .brand {
   font-size: 40px;
   letter-spacing: 1px;
   padding: 5px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 .price {
-  font-size: 20px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 .scoville {
-  font-size: 20px;
+  font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
 }
 
 .description {
+  font-size: 20px;
   padding: 10px;
   letter-spacing: .9px;
   margin-top: 2%;
+  color: black;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
   
 }
 
@@ -49,7 +69,8 @@
 
 .edit-button, .delete-button {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
   text-align: center;
   height: 45px;
   width: 20%;

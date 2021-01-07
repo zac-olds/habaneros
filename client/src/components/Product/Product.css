@@ -19,22 +19,35 @@
 }
 
 .product-name {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
+
 }
 
 .product-brand {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 .product-scoville {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 .price {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
