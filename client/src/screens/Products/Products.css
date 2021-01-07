@@ -1,10 +1,11 @@
 .products {
-  width: 90vw;
+  width: 85vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
 }
+
 
 @media (max-width: 500px) {
   .products {

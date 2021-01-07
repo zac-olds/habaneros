@@ -23,7 +23,6 @@ const Products = (props) => {
       imgURL={product.imgURL}
       brand={product.brand}
       scoville={product.scoville}
-      description={product.description}
       price={product.price}
       key={index}
     />
