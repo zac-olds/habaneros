@@ -1,11 +1,33 @@
+html {
+  background-color: #0b2512;
+}
+
 .home {
   width: 100vw;
+  position: relative;
+  /* background-color: #0b2512;  */
+  top: -20px;
+}
+
+.home img {
+  width: 100vw;
+  height: auto;
+}
+
+.awssld__bullets {
+  bottom: 0px;
 }
 
 .fa-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  margin: 0 auto;
+  width: 100%;
+  top: 60vh;
 }
 
 .fa-pepper,
@@ -13,7 +35,7 @@
 .fa-flame {
   font-size: 100px;
   margin: 0px 50px 0px 50px;
-  filter: drop-shadow(5px 5px 10px black);
+  filter: drop-shadow(5px 5px 10px gainsboro);
 }
 
 .fa-flame:hover {
