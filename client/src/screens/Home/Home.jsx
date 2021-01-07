@@ -6,22 +6,22 @@ import Layout from "../../components/shared/Layout/Layout";
 import {Link} from "react-router-dom";
 
 // STYLING AND ICONS
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import {
-//   faPepperHot,
-//   faWineBottle,
-//   faFireAlt,
-// } from "@fortawesome/free-solid-svg-icons";
-// import "./Home.css";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+  faPepperHot,
+  faWineBottle,
+  faFireAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import "./Home.css";
 
 const Home = (props) => {
-  // const pepper = <FontAwesomeIcon icon={faPepperHot} />;
-  // const bottle = <FontAwesomeIcon icon={faWineBottle} />;
-  // const flame = <FontAwesomeIcon icon={faFireAlt} />;
+  const pepper = <FontAwesomeIcon icon={faPepperHot} />;
+  const bottle = <FontAwesomeIcon icon={faWineBottle} />;
+  const flame = <FontAwesomeIcon icon={faFireAlt} />;
 
   return (
     <Layout user={props.user}>
-      {/* <div className="home">
+      <div className="home">
         <div className="fa-container">
           <Link to="/products">
             <div className="fa-bottle">
@@ -42,7 +42,7 @@ const Home = (props) => {
             </div>
           </Link>
         </div>
-      </div> */}
+      </div>
     </Layout>
   );
 };
