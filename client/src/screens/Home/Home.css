@@ -1,21 +1,65 @@
 html {
-  background-color: #0b2512;
+  /* background-color: #0b2512; */
+}
+
+.awssld_wrapper {
+  height: 100vh;
 }
 
 .home {
   width: 100vw;
+  height: 100vh;
   position: relative;
   /* background-color: #0b2512;  */
   top: -20px;
 }
 
-.home img {
-  width: 100vw;
+.home > img {
+  width: 100%;
   height: auto;
 }
 
-.awssld__bullets {
-  bottom: 0px;
+/* .awssld__content,
+.awssld_box,
+.awssld_container,
+.awssld_wrapper, */
+.awssld {
+  height: 100vh;
+}
+
+.image-1 {
+  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-2 {
+  background-image: url("https://i.imgur.com/S0qmii9.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-3 {
+  background-image: url("https://i.imgur.com/6B2F3Vg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-4 {
+  background-image: url("https://i.imgur.com/pmVwWev.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-5 {
+  background-image: url("https://i.imgur.com/J9yq8tN.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .fa-container {
