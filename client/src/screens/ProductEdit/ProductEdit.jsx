@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./ProductEdit.css";
-import {useParams, Redirect} from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
-import {getProduct, updateProduct} from "../../services/products";
+import { getProduct, updateProduct } from "../../services/products";
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
@@ -15,7 +15,7 @@ const ProductEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
-  let {id} = useParams();
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -26,7 +26,7 @@ const ProductEdit = (props) => {
   }, [id]);
 
   const handleChange = (event) => {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
     setProduct({
       ...product,
       [name]: value,
@@ -85,7 +85,7 @@ const ProductEdit = (props) => {
           <input
             className="input-scoville"
             placeholder="Scoville"
-            value={product.scoville}
+            value={`${product.scoville} SHU`}
             name="scoville"
             required
             autoFocus
@@ -94,7 +94,7 @@ const ProductEdit = (props) => {
           <input
             className="input-price"
             placeholder="Price"
-            value={product.price}
+            value={`$${product.price}.00`}
             name="price"
             required
             onChange={handleChange}
@@ -102,7 +102,7 @@ const ProductEdit = (props) => {
           <textarea
             className="textarea-description"
             rows={10}
-            cols={78}
+            cols={60}
             placeholder="Descritption"
             value={product.description}
             name="description"
