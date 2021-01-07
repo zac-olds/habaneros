@@ -1,4 +1,5 @@
 .home {
+  width: 100vw;
 }
 
 .fa-container {
@@ -17,17 +18,17 @@
 
 .fa-flame:hover {
   color: #ffa400;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .fa-pepper:hover {
   color: #ed2939;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .fa-bottle:hover {
-  color: #ffff00;
-  transform: scale(1.3);
+  color: #ffe135;
+  transform: scale(1.2);
 }
 
 .pepper-text,

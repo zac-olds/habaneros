@@ -23,18 +23,24 @@ const Home = (props) => {
     <Layout user={props.user}>
       <div className="home">
         <div className="fa-container">
-          <div className="fa-bottle">
-            {bottle}
-            <p className="bottle-text">HOT SAUCES</p>
-          </div>
-          <div className="fa-pepper">
-            {pepper}
-            <p className="pepper-text">PEPPER INFO</p>
-          </div>
-          <div className="fa-flame">
-            {flame}
-            <p className="flame-text">SCOVILLE SCALE</p>
-          </div>
+          <Link to="/products">
+            <div className="fa-bottle">
+              {bottle}
+              <p className="bottle-text">HOT SAUCES</p>
+            </div>
+          </Link>
+          <Link to="/peppers">
+            <div className="fa-pepper">
+              {pepper}
+              <p className="pepper-text">PEPPER INFO</p>
+            </div>
+          </Link>
+          <Link to="scoville">
+            <div className="fa-flame">
+              {flame}
+              <p className="flame-text">SCOVILLE SCALE</p>
+            </div>
+          </Link>
         </div>
       </div>
     </Layout>
