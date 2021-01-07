@@ -10,7 +10,7 @@ const Product = (props) => {
                 <div className="product-brand">{props.brand}</div>
                 <div className="product-name">{props.name}</div>
                 <div className="product-scoville">{props.scoville} SHU</div>
-                <div className="price">{`$${props.price}.00`}</div>
+                <div className="product-price">{`$${props.price}.00`}</div>
             </Link>
         </>
     )

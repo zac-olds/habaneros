@@ -28,16 +28,16 @@
   line-height: 1.6;
 }
 
-.input-name {
+.edit-name {
   font-family: "Josefin Slab", serif;
   color: black;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 1px;
   padding: 5px;
 }
 
-.brand {
+.edit-brand {
   font-family: "Josefin Slab", serif;
   font-size: 40px;
   color: black;
@@ -46,24 +46,23 @@
   padding: 5px;
 }
 
-.price {
+.edit-price {
   font-family: "Josefin Slab", serif;
-  font-size: 20px;
+  font-size: 40px;
   color: black;
   font-weight: bold;
 }
 
-.scoville {
+.edit-scoville {
   font-family: "Josefin Slab", serif;
-  font-size: 20px;
+  font-size: 40px;
   color: black;
   font-weight: bold;
 }
 
-.textarea-description {
+.edit-description {
   font-family: "Josefin Slab", serif;
   font-size: 16px;
-  padding: 10px;
   letter-spacing: .9px;
   line-height: 1.6;
   color: black;
