@@ -5,7 +5,7 @@ import Layout from "../../components/shared/Layout/Layout";
 const Home = (props) => {
   return (
     <Layout user={props.user}>
-      <div className="home"></div>
+      <div className="home">Hello There</div>
     </Layout>
   );
 };
