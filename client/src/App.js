@@ -1,6 +1,7 @@
 // SCREENS
 import Home from "./screens/Home/Home";
 import Products from "./screens/Products/Products";
+import Peppers from "./screens/Peppers/Peppers"
 import ProductDetail from "./screens/ProductDetail/ProductDetail";
 import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
@@ -47,6 +48,13 @@ function App() {
         <Route exact path="/products">
           <Products
           user={user}
+          />
+        </Route>
+
+        {/* PEPPERS INFO */}
+        <Route exact path="/peppers">
+          <Peppers
+            user={user}
           />
         </Route>
 
