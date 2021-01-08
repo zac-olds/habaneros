@@ -73,7 +73,7 @@ const ProductCreate = (props) => {
         />
         <textarea
           className="textarea-description"
-          rows={10}
+          rows={6}
           placeholder="Description"
           value={product.description}
           name="description"

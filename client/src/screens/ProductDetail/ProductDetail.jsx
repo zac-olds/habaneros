@@ -31,7 +31,7 @@ const ProductDetail = (props) => {
           alt={product.name}
         />
         <div className="detail">
-          <div className="brand">{product.brand}</div>
+          <div className="brand">{product.brand} |</div>
           <div className="name">{product.name}</div>
           <div className="price">{`$${product.price}.00`}</div>
           <div className="scoville">{product.scoville} SHU</div>

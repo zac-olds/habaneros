@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
   justify-content: space-evenly;
 }
 
@@ -13,45 +12,89 @@ input:focus, textarea:focus, select:focus {
 
 input, textarea {
   font-size: 48px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Josefin Slab", serif;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: hidden;
+    color: black;
 }
 
 textarea {
   font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Slab", serif;
+  
 }
 
 .input-name {
-  font-size: 48px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-left: 10%;
+}
+.input-brand {
+  font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-left: 10%;
+}
+.input-scoville {
+  font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-left: 10%;
+}
+.input-price {
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-left: 10%;
 }
 
-.imput-price {
-  padding-left: 10px;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+.textarea-description{
+  font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin-left: 10%;
 }
 
 .input-image-link {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  color: black;
+  margin-left: 10%;
 }
 
 .submit-button {
 
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
   height: 40px;
+  width: 100px;
   margin-top: 40px;
-  background-color: black;
+  background-color: #0B2512;
   color: white;
   border: none;
   box-shadow: 2px 2px 10px 2px #CECECE;
   cursor: pointer;
+  margin-left: 10%;
 
 }
 

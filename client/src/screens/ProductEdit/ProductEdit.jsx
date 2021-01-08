@@ -65,7 +65,7 @@ const ProductEdit = (props) => {
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
-            className="input-name"
+            className="edit-name"
             placeholder="Name"
             value={product.name}
             name="name"
@@ -74,7 +74,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-brand"
+            className="edit-brand"
             placeholder="Brand"
             value={product.brand}
             name="brand"
@@ -83,7 +83,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-scoville"
+            className="edit-scoville"
             placeholder="Scoville"
             value={`${product.scoville} SHU`}
             name="scoville"
@@ -92,7 +92,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-price"
+            className="edit-price"
             placeholder="Price"
             value={`$${product.price}.00`}
             name="price"
@@ -100,10 +100,10 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <textarea
-            className="textarea-description"
+            className="edit-description"
             rows={10}
             cols={60}
-            placeholder="Descritption"
+            placeholder="Description"
             value={product.description}
             name="description"
             required
