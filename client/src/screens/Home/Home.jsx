@@ -17,7 +17,8 @@ import "./Home.css";
 // SLIDER
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import "react-awesome-slider/dist/styles.css";
+import CoreStyles from "react-awesome-slider/dist/styles.css";
+import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 
 const Home = (props) => {
   const pepper = <FontAwesomeIcon icon={faPepperHot} />;
@@ -29,26 +30,39 @@ const Home = (props) => {
   return (
     <Layout user={props.user}>
       <div className="home">
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={9000}>
+        <AutoplaySlider
+          animation="foldOutAnimation"
+          cssModule={[CoreStyles, AnimationStyles]}
+          fillParent={true}
+          play={true}
+          bullets={false}
+          cancelOnInteraction={false}
+          interval={9000}
+        >
           <div>
-            <div className="image-1" />
-            {/* <img src="https://i.imgur.com/zwu6CLI.jpg" alt="image1" /> */}
+            <div className="image-1">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-2" />
-            {/* <img src="https://i.imgur.com/S0qmii9.jpg" alt="image2" /> */}
+            <div className="image-2">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-3" />
-            {/* <img src="https://i.imgur.com/6B2F3Vg.jpg" alt="image3" /> */}
+            <div className="image-3">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-4" />
-            {/* <img src="https://i.imgur.com/pmVwWev.jpg" alt="image4" /> */}
+            <div className="image-4">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-5" />
-            {/* <img src="https://i.imgur.com/J9yq8tN.jpg" alt="image5" /> */}
+            <div className="image-5">
+              <div className="image-filter" />
+            </div>
           </div>
         </AutoplaySlider>
         <div className="fa-container">

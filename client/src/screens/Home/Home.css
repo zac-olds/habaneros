@@ -1,22 +1,25 @@
-.awssld_wrapper {
-  height: 100vh;
-}
-
 .home {
   width: 100vw;
   height: 100vh;
   position: relative;
+  /* top: 80px; */
   /* background-color: #0b2512;  */
-  top: -20px;
 }
 
-.home > img {
+.image-filter {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), white);
+  height: 100%;
   width: 100%;
-  height: auto;
 }
 
+/* THE CAROUSEL */
 .awssld {
   height: 100vh;
+  width: 100vw;
+}
+
+.awssld--foldOutAnimation {
+  --fold-out-perspective: none !important;
 }
 
 .image-1 {
@@ -59,11 +62,10 @@
   flex-direction: row;
   justify-content: center;
   position: absolute;
-  top: 0px;
   z-index: 3;
   margin: 0 auto;
   width: 100%;
-  top: 35vh;
+  top: 70vh;
 }
 
 .fa-pepper,
@@ -93,11 +95,20 @@
 .bottle-text,
 .flame-text {
   font-size: 24px;
+  font-weight: 700;
   color: black;
 }
 
-@media (max-width: 400px) {
-  .home {
-    padding: 100px 40px;
+@media (max-width: 625px) {
+  .fa-pepper,
+  .fa-bottle,
+  .fa-flame {
+    font-size: 50px;
+    margin: 0px 20px 0px 20px;
+  }
+  .pepper-text,
+  .bottle-text,
+  .flame-text {
+    font-size: 18px;
   }
 }

@@ -1,7 +1,21 @@
-footer {
+.footer-container {
+  background-color: #0b2512;
+  color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  flex: 1;
-  padding: 20px;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  position: absolute;
+  font-size: 18px;
+}
+
+.footer-container a {
+  color: white;
+  margin: 5px;
+}
+
+.footer-container p {
+  margin-left: 5px;
 }
