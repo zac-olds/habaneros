@@ -19,10 +19,6 @@ html {
   height: auto;
 }
 
-/* .awssld__content,
-.awssld_box,
-.awssld_container,
-.awssld_wrapper, */
 .awssld {
   height: 100vh;
 }
@@ -71,7 +67,7 @@ html {
   z-index: 3;
   margin: 0 auto;
   width: 100%;
-  top: 60vh;
+  top: 35vh;
 }
 
 .fa-pepper,
