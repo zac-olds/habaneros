@@ -1,47 +1,23 @@
 // COMPONENTS
 import Layout from "../../components/shared/Layout/Layout";
 
-// SLIDER
-import AwesomeSlider from "react-awesome-slider";
-import withAutoplay from "react-awesome-slider/dist/autoplay";
-import CoreStyles from "react-awesome-slider/dist/styles.css";
-import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
+// NEW SLIDER
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import "./Peppers.css";
-
-const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Peppers = (props) => {
   return (
     <Layout user={props.user}>
       <div className="pepper-container">
-        {/* <AutoplaySlider
-          animation="foldOutAnimation"
-          cssModule={[CoreStyles, AnimationStyles]}
-          // fillParent={true}
-          play={true}
-          bullets={false}
-          cancelOnInteraction={false}
-          interval={9000}
-        >
-          <div>
-            <div className="pepper-1" />
-          </div>
-          <div>
-            <div className="pepper-2" />
-          </div>
-          <div>
-            <div className="pepper-3" />
-          </div>
-          <div>
-            <div className="pepper-4" />
-          </div>
-          <div>
-            <div className="pepper-5" />
-          </div>
-          <div>
-            <div className="pepper-6" />
-          </div>
-        </AutoplaySlider> */}
+        <AliceCarousel autoPlay autoPlayInterval="3000">
+          <img src="https://i.imgur.com/OanWKEp.jpg " className="sliderimg" />
+          <img src="https://i.imgur.com/MXjSBHo.jpg" className="sliderimg" />
+          <img src="https://i.imgur.com/GD80vQQ.jpg " className="sliderimg" />
+          <img src="https://i.imgur.com/DZHIsPN.jpg" className="sliderimg" />
+          <img src="https://i.imgur.com/ljp4roM.jpg" className="sliderimg" />
+          <img src="https://i.imgur.com/1kfM974.jpg" className="sliderimg" />
+        </AliceCarousel>
       </div>
     </Layout>
   );
