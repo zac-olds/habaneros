@@ -1,0 +1,41 @@
+.pepper-container {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+}
+
+/* Peach Ghost Scorpion */
+.pepper-1 {
+  background-image: url("https://i.imgur.com/OanWKEp.jpg");
+  background-size: cover;
+}
+
+/* Carolina Reaper */
+.pepper-2 {
+  background-image: url("https://i.imgur.com/MXjSBHo.jpg");
+  background-size: cover;
+}
+
+/* Seven-Pot Habanero */
+.pepper-3 {
+  background-image: url("https://i.imgur.com/JdcwhP7.jpg");
+  background-size: cover;
+}
+
+/* Trinidad Moruga Scorpion */
+.pepper-4 {
+  background-image: url("https://i.imgur.com/DZHIsPN.jpg");
+  background-size: cover;
+}
+
+/* Naga Viper */
+.pepper-5 {
+  background-image: url("https://i.imgur.com/ljp4roM.jpg");
+  background-size: cover;
+}
+
+/* Chocolate Habalokia */
+.pepper-6 {
+  background-image: url("https://i.imgur.com/1kfM974.jpg");
+  background-size: cover;
+}

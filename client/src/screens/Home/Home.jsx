@@ -64,6 +64,11 @@ const Home = (props) => {
               <div className="image-filter" />
             </div>
           </div>
+          <div>
+            <div className="image-6">
+              <div className="image-filter" />
+            </div>
+          </div>
         </AutoplaySlider>
         <div className="fa-container">
           <Link to="/products">
