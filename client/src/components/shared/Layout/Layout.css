@@ -4,10 +4,10 @@
   flex-direction: column;
 }
 
-.layout-children {
-  /* flex: 2; */
+/* .layout-children {
+  flex: 2;
   padding: 100px 0px 100px 0px;
-}
+} */
 
 @media (max-width: 500px) {
   .layout {
@@ -16,7 +16,7 @@
     flex-direction: column;
   }
   .layout-children {
-    width: 80vw;
+    /* width: 80vw; */
     padding: 0px;
     margin: 0px;
     display: flex;
