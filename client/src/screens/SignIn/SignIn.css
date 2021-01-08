@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100%;
 }
 
@@ -15,7 +15,6 @@ button {
   border-radius: 3px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  
 }
 
 .navbar {
