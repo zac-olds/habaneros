@@ -23,7 +23,7 @@
 }
 
 .image-1 {
-  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
+  background-image: url("https://i.imgur.com/JdcwhP7.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -44,7 +44,7 @@
 }
 
 .image-4 {
-  background-image: url("https://i.imgur.com/pmVwWev.jpg");
+  background-image: url("https://i.imgur.com/1ioPcY4.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -52,6 +52,13 @@
 
 .image-5 {
   background-image: url("https://i.imgur.com/J9yq8tN.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-6 {
+  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -94,12 +101,12 @@
 .pepper-text,
 .bottle-text,
 .flame-text {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: black;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 710px) {
   .fa-pepper,
   .fa-bottle,
   .fa-flame {
@@ -109,6 +116,6 @@
   .pepper-text,
   .bottle-text,
   .flame-text {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
