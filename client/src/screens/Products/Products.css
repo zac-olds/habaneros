@@ -10,7 +10,8 @@
 @media (max-width: 500px) {
   .products {
       width: 100%;
-      justify-content: space-around;
+      /* justify-content: space-around; */
+      align-items: center;
   }
 
 }

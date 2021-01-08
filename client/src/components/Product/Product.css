@@ -52,11 +52,15 @@
 
 @media (max-width: 500px) {
   .product {
-      width: 100%;
+      width: 70%;
+      height: 1.7%;
       margin-bottom: 20px;
+      margin-top: 15%;
+
   }
   .product-image {
-      width: 180px;
+      width: 90px;
+      height: 130px;
       margin: 15px;
       padding: 10px;
   }
