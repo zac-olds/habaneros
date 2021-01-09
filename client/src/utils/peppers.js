@@ -1,4 +1,4 @@
-export const items = [
+export const peppers = [
   {
     name: "Smokin' Ed's Carolina Reaper",
     imageURL: "https://i.imgur.com/SsudIiU.jpg",
