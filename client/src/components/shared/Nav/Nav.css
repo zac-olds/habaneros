@@ -14,7 +14,6 @@ nav {
   margin-left: -2px;
   margin-right: -2px;
   margin-top: -2px;
-  /* box-shadow: 1px 1px 1px 0.3px #cecece; */
   width: 100vw;
 }
 
@@ -64,7 +63,7 @@ a {
 @media (max-width: 500px) {
   nav {
     width: 100%;
-    height: 9%;
+    height: 8%;
   }
   .store-name {
     max-width: 50%;
@@ -92,8 +91,8 @@ a {
   .store-name {
     max-width: 50%;
     font-size: 34px;
-    margin-right: 15%;
-    margin-left: 2%;
+    margin-right: 12%;
+    margin-left: 5%;
     letter-spacing: -1.6px;
   }
   .link-welcome {
@@ -104,5 +103,40 @@ a {
   .link {
     padding: 7px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 540px) {
+  nav {
+    width: 100%;
+    height: 9%;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 100%;
+    height: 7%;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    width: 100%;
+    height: 9%;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    width: 100%;
+    height: 6%;
+  }
+}
+
+@media (min-width: 1027px) {
+  nav {
+    width: 100%;
+    height: 10%;
   }
 }

@@ -59,7 +59,7 @@ const SignUp = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container-signup">
         <h3>Sign Up</h3>
         <form onSubmit={onSignUp}>
           <input
