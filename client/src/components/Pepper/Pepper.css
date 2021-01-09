@@ -14,15 +14,18 @@
   /* border: 3px solid black; */
 }
 
-.pepper-info-box {
+/* .pepper-info-box {
   display: none;
-}
-
+} */
+/* 
 .pepper-img:hover + .pepper-info-box {
   display: block;
 }
 
+.pepper-img:hover {
+  display: none;
+}
+
 .pepper-info-box:hover {
   display: block;
-  margin-bottom: 20px;
-}
+} */

@@ -1,16 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Pepper.css";
 
 const Pepper = (props) => {
+  const [hover, setHover] = useState(false);
   return (
-    <div className="pepper-container">
-      <div className="pepper-box">
+    <div>
+      <div
+        className="pepper-box"
+        onMouseOver={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
         <img
+          style={hover ? {display: "none"} : {display: "block"}}
           className="pepper-img"
-          src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/1/8/1420721282123/4484a2b0-69bd-4c21-9730-63692391fd38-1360x2040.jpeg?width=700&quality=45&auto=format&fit=max&dpr=2&s=33d6ff1714762858142f6f2c78adffe8"
+          src="https://i.imgur.com/faVG2H6.jpg"
           alt="Trinidad Moruga Scorpion"
         />
-        <div className="pepper-info-box">
+        <div
+          className="pepper-info-box"
+          style={hover ? {display: "block"} : {display: "none"}}
+        >
           <h3>Trinidad Moruga Scorpion</h3>
           <p>2,009,231 SHUs</p>
           <p>
