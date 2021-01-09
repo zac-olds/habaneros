@@ -21,3 +21,32 @@
 .footer-container p {
   margin-left: 5px;
 }
+
+@media (max-width: 500px) {
+  .footer-container {
+    font-size: 13px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 540px) {
+  .footer-container {
+    font-size: 18px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    font-size: 18px;
+    height: 86px;
+  }
+}
+
+@media (min-width: 1866px) {
+  .footer-container {
+    font-size: 18px;
+    height: 86px;
+    margin-top: 30%;
+  }
+}

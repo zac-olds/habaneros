@@ -7,11 +7,6 @@ body {
   height: 100%;
 }
 
-.footer-container{
-  position: absolute;
-  bottom: 0;
-}
-
 button {
   cursor: pointer;
   font-size: 1rem;
@@ -95,7 +90,7 @@ input {
   background:#0B2512;
   border: none;
   color: white;
-  margin-top: 12%;
+  margin-top: 8%;
 }
 
 .form-container form button:hover {
@@ -160,15 +155,15 @@ input {
   }  
 }
 
-@media (min-width: 540px) {
+@media (min-width: 520px) {
   .store-name {
     max-width: 50%;
     font-size: 30px;
   }
   .form-container {
     width: 60%;
-    height: 50%;
-    margin-top: 40%;
+    height: 48%;
+    margin-top: 35%;
     margin-left: 18%;
   }
   
@@ -189,11 +184,20 @@ input {
   }  
 }
 
+@media (min-width: 677px) {
+  .form-container {
+    width: 60%;
+    height: 58%;
+    margin-top: 23%;
+    margin-left: 18%;
+  }
+}
+
 @media (min-width: 768px) {
   .form-container {
     width: 60%;
-    height: 55%;
-    margin-top: 35%;
+    height: 61%;
+    margin-top: 15%;
     margin-left: 18%;
   }
 }
@@ -202,19 +206,19 @@ input {
  @media (min-width: 1000px) {
   .store-name {
     max-width: 50%;
-    font-size: 40px;
+    font-size: 35px;
   }
   .link {
     font-size: 18px;
   }
   .form-container {
     width: 65%;
-    height: 60%;
-    margin-top: 30%;
+    height: 63%;
+    margin-top: 15%;
     margin-left: 15%;
   }
   .form-container h3 {
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 5%;
   }
   
@@ -222,24 +226,83 @@ input {
     height: 30px;
     padding: 0.5em ;
     height: 37px;
-    font-size: 20px;
+    font-size: 15px;
     align-self: center;
   }
   
   .form-container form button {
     
     height: 50px;
-    font-size: 20px;
+    font-size: 15px;
   }  
 } 
 
-@media (min-width: 1358px) {
+
+@media (min-width: 1108px){
   .form-container {
     align-self: center;
     padding: 1em;
-    width: 160%;
+    width: 40%;
     height: 60%;
-    margin-top: 60%;
-    margin-left: 175%;
+    margin-top: 15%;
+    margin-left: 28%;
+  }
+}
+
+@media (min-width: 1186px) {
+  .form-container {
+    align-self: center;
+    padding: 1em;
+    width: 40%;
+    height: 60%;
+    margin-top: 12%;
+    margin-left: 28%;
+  }
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-container {
+    align-self: center;
+    padding: 1em;
+    width: 45%;
+    height: 68%;
+    margin-top: 10%;
+    margin-left: 23%;
+  }
+  
+}
+
+@media (min-width: 1600px) {
+  .form-container {
+    margin-top: 7%;
+    margin-left: 23%;
+  }
+  
+}
+
+@media (min-width: 1900px) {
+  .form-container {
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+  
+}
+
+@media (min-width: 2300px) {
+  .form-container {
+    margin-top: 9%;
+    margin-left: 25%;
+  }
+  
+}
+
+@media (min-width: 2500px) {
+  .form-container {
+    margin-top: 7%;
+    margin-left: 25%;
+    height: 73%;
   }
 }
