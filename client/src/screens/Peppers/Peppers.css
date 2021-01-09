@@ -1,17 +1,7 @@
-/* NEW SLIDER */
 .pepper-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 10%;
-}
-
-.sliderimg {
-  width: 50%;
-  height: 50%;
-  object-fit: flex;
-}
-
-.alice-carousel__prev-btn {
-  text-align: center;
+  margin-top: 85px;
 }

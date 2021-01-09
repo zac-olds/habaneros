@@ -1,0 +1,28 @@
+.pepper-box {
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pepper-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px grey;
+  /* border: 3px solid black; */
+}
+
+.pepper-info-box {
+  display: none;
+}
+
+.pepper-img:hover + .pepper-info-box {
+  display: block;
+}
+
+.pepper-info-box:hover {
+  display: block;
+  margin-bottom: 20px;
+}
