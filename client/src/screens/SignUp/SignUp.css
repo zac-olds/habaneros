@@ -7,11 +7,6 @@ body {
   height: 100%;
 }
 
-/* .footer-container{
-  position: absolute;
-  bottom: 0;
-} */
-
 button {
   cursor: pointer;
   font-size: 1rem;
@@ -20,7 +15,6 @@ button {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 
 .container {
   height: 100%;
@@ -32,7 +26,7 @@ button {
   align-items: center;
   margin-top: 3em;
 }
-.form-container {
+.form-container-signup {
   align-self: center;
   padding: 1em;
   width: 50%;
@@ -51,16 +45,16 @@ input {
 
 }
 
-.form-container .danger {
+.form-container-signup .danger {
   background: #8D0801;
 }
 
-.form-container h3 {
+.form-container-signup h3 {
   text-align: center;
   margin-bottom: 10%;
 }
 
-.form-container form {
+.form-container-signup form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +63,7 @@ input {
   align-items: center;
 }
 
-.form-container form input {
+.form-container-signup form input {
   width: 100%;
   padding: 0.6em 1em;
   margin: 0.5em auto;
@@ -80,16 +74,16 @@ input {
   transition: all 0.4s ease;
 }
 
-.form-container form input:focus,
-.form-container form input:active {
+.form-container-signup form input:focus,
+.form-container-signup form input:active {
   border: 2px solid #0B2512;
 }
 
-.form-container form input:valid {
+.form-container-signup form input:valid {
   border: 2px solid #66bb6a;
 }
 
-.form-container form button {
+.form-container-signup form button {
   width: 50%;
   margin: 1em auto;
   background:#0B2512;
@@ -98,11 +92,11 @@ input {
   margin-top: 8%;
 }
 
-.form-container form button:hover {
+.form-container-signup form button:hover {
   box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-.form-container form a {
+.form-container-signup form a {
   margin: auto;
 }
 
@@ -126,26 +120,26 @@ input {
 
   .store-name {
     max-width: 50%;
-    font-size: 23px;
+    font-size: 20px;
     margin-right: 1%;
     letter-spacing: -1.5px;
   }
   .link {
-    font-size: 13px;
+    font-size: 11px;
   }
  
-  .form-container {
+  .form-container-signup {
     width: 60%;
     height: 55%;
     margin-top: 40%;
     margin-left: 15%;
     margin-bottom: 13%;
 }
-  .form-container h3 {
+  .form-container-signup h3 {
     font-size: 13px;
   }
   
-  .form-container form input {
+  .form-container-signup form input {
     width: 100%;
     height: 20px;
     padding: 0.3em ;
@@ -153,8 +147,8 @@ input {
     align-self: center;
   }
   
-  .form-container form button {
-    width: 45%;
+  .form-container-signup form button {
+    width: 48%;
     height: 27px;
     font-size: 11px;
   }  
@@ -165,24 +159,24 @@ input {
     max-width: 50%;
     font-size: 30px;
   }
-  .form-container {
+  .form-container-signup {
     width: 60%;
-    height: 48%;
+    height: 55%;
     margin-top: 35%;
     margin-left: 18%;
   }
   
-  .form-container h3 {
+  .form-container-signup h3 {
     font-size: 15px;
   }
   
-  .form-container form input {
+  .form-container-signup form input {
     width: 80%;
     height: 15px;
     font-size: 15px;
   }
   
-  .form-container form button {
+  .form-container-signup form button {
 
     height: 35px;
     font-size: 13px;
@@ -190,7 +184,7 @@ input {
 }
 
 @media (min-width: 677px) {
-  .form-container {
+  .form-container-signup {
     width: 60%;
     height: 58%;
     margin-top: 23%;
@@ -199,10 +193,19 @@ input {
 }
 
 @media (min-width: 768px) {
-  .form-container {
+  .form-container-signup {
     width: 60%;
-    height: 61%;
+    height: 65%;
     margin-top: 15%;
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 995px) {
+  .form-container-signup {
+    width: 60%;
+    height: 68%;
+    margin-top: 12%;
     margin-left: 18%;
   }
 }
@@ -216,18 +219,18 @@ input {
   .link {
     font-size: 18px;
   }
-  .form-container {
+  .form-container-signup {
     width: 65%;
-    height: 63%;
+    height: 69%;
     margin-top: 15%;
     margin-left: 15%;
   }
-  .form-container h3 {
+  .form-container-signup h3 {
     font-size: 15px;
     margin-top: 5%;
   }
   
-  .form-container form input {
+  .form-container-signup form input {
     height: 30px;
     padding: 0.5em ;
     height: 37px;
@@ -235,16 +238,32 @@ input {
     align-self: center;
   }
   
-  .form-container form button {
+  .form-container-signup form button {
     
     height: 50px;
     font-size: 15px;
   }  
 } 
 
+@media (min-width: 1057px){
+  .form-container-signup {
+    align-self: center;
+    padding: 1em;
+    width: 40%;
+    height: 65%;
+    margin-top: 11%;
+    margin-left: 28%;
+  }
+  .form-container-signup form button {
+    margin-top: 4%;
+    height: 45px;
+    width: 40%;
+    font-size: 14px;
+  }
+}
 
 @media (min-width: 1108px){
-  .form-container {
+  .form-container-signup {
     align-self: center;
     padding: 1em;
     width: 40%;
@@ -255,12 +274,12 @@ input {
 }
 
 @media (min-width: 1186px) {
-  .form-container {
+  .form-container-signup {
     align-self: center;
     padding: 1em;
     width: 40%;
-    height: 60%;
-    margin-top: 12%;
+    height: 70%;
+    margin-top: 10%;
     margin-left: 28%;
   }
   .link {
@@ -269,7 +288,7 @@ input {
 }
 
 @media (min-width: 1200px) {
-  .form-container {
+  .form-container-signup {
     align-self: center;
     padding: 1em;
     width: 45%;
@@ -277,37 +296,51 @@ input {
     margin-top: 10%;
     margin-left: 23%;
   }
-  
 }
 
-@media (min-width: 1600px) {
-  .form-container {
+@media (min-width: 1297px) {
+  .form-container-signup {
+    align-self: center;
+    padding: 1em;
+    width: 45%;
+    height: 68%;
+    margin-top: 8.5%;
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 1527px) {
+  .form-container-signup {
+    align-self: center;
+    padding: 1em;
+    width: 42%;
+    height: 68%;
     margin-top: 7%;
-    margin-left: 23%;
+    margin-left: 27%;
   }
-  
 }
 
-@media (min-width: 1900px) {
-  .form-container {
-    margin-top: 10%;
-    margin-left: 25%;
+@media (min-width: 1627px) {
+  .form-container-signup {
+    align-self: center;
+    padding: 1em;
+    width: 35%;
+    height: 68%;
+    margin-top: 6%;
+    margin-left: 30%;
   }
-  
+  .form-container-signup h3 {
+    margin-top: 5%;
+  }
+  input {
+    margin-top: 1%;
+  }
+
+  .form-container-signup form button {
+    margin-top: 4%;
+  }
 }
 
-@media (min-width: 2300px) {
-  .form-container {
-    margin-top: 9%;
-    margin-left: 25%;
-  }
-  
-}
 
-@media (min-width: 2500px) {
-  .form-container {
-    margin-top: 7%;
-    margin-left: 25%;
-    height: 73%;
-  }
-}
+
+

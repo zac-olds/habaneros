@@ -121,12 +121,12 @@ input {
 
   .store-name {
     max-width: 50%;
-    font-size: 23px;
+    font-size: 20px;
     margin-right: 1%;
     letter-spacing: -1.5px;
   }
   .link {
-    font-size: 13px;
+    font-size: 11px;
   }
  
   .form-container {
