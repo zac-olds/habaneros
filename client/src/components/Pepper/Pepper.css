@@ -10,22 +10,5 @@
   height: 200px;
   width: 200px;
   border-radius: 100%;
-  box-shadow: 3px 3px 5px grey;
-  /* border: 3px solid black; */
+  box-shadow: 3px 3px 10px grey;
 }
-
-/* .pepper-info-box {
-  display: none;
-} */
-/* 
-.pepper-img:hover + .pepper-info-box {
-  display: block;
-}
-
-.pepper-img:hover {
-  display: none;
-}
-
-.pepper-info-box:hover {
-  display: block;
-} */
