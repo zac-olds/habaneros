@@ -1,0 +1,14 @@
+.pepper-box {
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pepper-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 10px grey;
+}
