@@ -3,7 +3,7 @@ export const peppers = [
     name: "Smokin' Ed's Carolina Reaper",
     imageURL: "https://i.imgur.com/SsudIiU.jpg",
     scoville: "1,641,300",
-    description: "This pepper holds the record for worlds hottest pepper. It is beautiful bright red with a rough surface and a long stinger. But don't let its good looks fool you! This pepper got its name for a reason. If you are stupid enough to eat this pepper whole you may wish to enter the doors of death willingly!",
+    description: "This pepper holds the record for worlds hottest pepper. It is a beautiful bright red with a rough surface and a long stinger. But don't let its good looks fool you! This pepper got its name for a reason. If you are stupid enough to eat this pepper whole you may wish to enter the doors of death willingly!",
   },
   {
     name: "Trinidad Moruga Scorpion",
