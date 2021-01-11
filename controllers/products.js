@@ -98,35 +98,38 @@ const addProductToUser = async (req, res) => {
   // get the user PUT
   console.log("username: ", req.params.username
   )
-  const user = await User.find({username: req.params.username})
+  const user = await User.find({ username: req.params.username })
   // push the existing product id into user.products array
   const product = req.body
   if (user) {
     console.log("user: ", user)
-    console.log("Products in cart:", user.products)
-    if (user.products) {
-      console.log("--2ND IF STATEMENT--")
-      user.products.push([
-        ...user.products,
-        product._id
-      ]);
-    } else {
-      console.log("--ELSE STATEMENT --")
-      user.products = [product._id]
-    }
-    await User.findByIdAndUpdate(user._id, user, { new: true }, (error, user) => {
-      if (error) {
-          return res.status(500).json({ error: error.message })
-      }
-      if (!user) {
-          return res.status(404).json({ message: 'User not found!' })
-      }
-      res.status(200).json(user)
-  })
-    console.log("after added user: ", user)
+    console.log("Products in cart:", user[0].products)
+    // if (user[0].products) {
+    console.log("--2ND IF STATEMENT--")
+    user[0].products.push(product._id);
+    console.log("after push: ", user[0].products)
+    user[0].save();
+    // }
+    // } else {
+    //   console.log("--ELSE STATEMENT --")
+    //   console.log(user)
+    //   user[0].products.push(product._id)
+    // }
+
+    //   await User.findByIdAndUpdate(user._id, user, { new: true }, (error, user) => {
+    //     if (error) {
+    //         return res.status(500).json({ error: error.message })
+    //     }
+    //     if (!user) {
+    //         return res.status(404).json({ message: 'User not found!' })
+    //     }
+    //     res.status(200).json(user)
+    // })
+    //   console.log("after added user: ", user)
+    // }
+    // return true
+    res.json(true)
   }
-  // return true
-  // res.json(true)
 }
 
 // const addProductToUser = async (req, res) => {
