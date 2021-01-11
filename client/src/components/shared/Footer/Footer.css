@@ -8,7 +8,7 @@
   width: 100vw;
   height: 80px;
   font-size: 18px;
-  position: absolute;
+  position: static;
   bottom: 0;
   
 }

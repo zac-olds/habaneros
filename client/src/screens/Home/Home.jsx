@@ -1,12 +1,13 @@
 // COMPONENTS
 import React from "react";
 import Layout from "../../components/shared/Layout/Layout";
-
+import { useState } from "react";
+import Popup from "../../components/PopupScoville/Popup";
 // DEPENDENCIES
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // STYLING AND ICONS
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPepperHot,
   faWineBottle,
@@ -21,9 +22,16 @@ import CoreStyles from "react-awesome-slider/dist/styles.css";
 import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 
 const Home = (props) => {
+  const [hover, setHover] = useState(false);
   const pepper = <FontAwesomeIcon icon={faPepperHot} />;
   const bottle = <FontAwesomeIcon icon={faWineBottle} />;
   const flame = <FontAwesomeIcon icon={faFireAlt} />;
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const onClickHandler = () => {
+    setShowPopup(!showPopup);
+  };
 
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -39,7 +47,11 @@ const Home = (props) => {
           cancelOnInteraction={false}
           interval={9000}
         >
-          <div>
+          <div
+            className="pepper-box"
+            onMouseOver={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
             <div className="image-1">
               <div className="image-filter" />
             </div>
@@ -83,10 +95,19 @@ const Home = (props) => {
               <p className="pepper-text">PEPPER INFO</p>
             </div>
           </Link>
-          <Link to="scoville">
-            <div className="fa-flame">
+          <Link to="/">
+            <div className="fa-flame" onClick={onClickHandler}>
               {flame}
               <p className="flame-text">SCOVILLE SCALE</p>
+              <div className="popup">
+                {showPopup ? (
+                  <Popup
+                    img="https://i.imgur.com/7lw0Fg5.jpg"
+                    text= "Scoville Scale"
+                    closePopup={onClickHandler}
+                  />
+                ) : null}
+              </div>
             </div>
           </Link>
         </div>
