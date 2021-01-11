@@ -6,7 +6,7 @@ import {getProducts} from "../../services/products";
 
 const Products = (props) => {
   const [allProducts, setAllProducts] = useState([]);
-  console.log(allProducts);
+  // console.log(allProducts);
 
   useEffect(() => {
     const fetchProducts = async () => {
