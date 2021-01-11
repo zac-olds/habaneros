@@ -62,10 +62,30 @@ const deleteProduct = async (req, res) => {
   }
 }
 
+// Cart controllers
+const getCart = async (req, res) => {
+  try {
+    let products = [], id = null; // setting up empty variables
+    let cart = JSON.parse(req.body.cart); // converts the JSON request recieved by the server into an object and sets it equal to the cart variable
+    if (!cart) return res.json(products); // if the cart is empty, return products
+    for (let i = 0; i < data.products.length; i++) {
+      id = products[i].id.toString(); // converts the product at index i to a string
+      if (cart.hasOwnProperty(id)) { // The hasOwnProperty() method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
+        products[i].qty = cart[id];
+        products.push(products[i]);
+      }
+    }
+    return res.json(products);
+  } catch (error) {
+    res.status(400).json({ error: error.message })
+  }
+}
+
 module.exports = {
   createProduct,
   getProducts,
   getProduct,
   updateProduct,
-  deleteProduct
+  deleteProduct,
+  getCart,
 }
