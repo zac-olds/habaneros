@@ -1,0 +1,51 @@
+.popup {
+  position: fixed;
+  width: 30vw;
+  height: 70vh;
+  top: 60px;
+  left: -70;
+  right: 0;
+  bottom: 395px;
+  margin: auto;
+ 
+}
+
+.popup-img{
+  width: 250px;
+  height: 290px;
+}
+
+.popup_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  left: 5%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+  background: white;
+}
+
+.popup-p{
+  margin-top: 7%;
+  font-size: 13px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+
+.popup-btn {
+  font-size: 13px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  height: 35px;
+  width: 80px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  background-color: #0B2512;
+  color:white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #CECECE;
+  cursor: pointer;
+}
