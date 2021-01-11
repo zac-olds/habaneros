@@ -9,6 +9,6 @@
 .pepper-img {
   height: 200px;
   width: 200px;
-  border-radius: 100%;
+  border-radius: 25px;
   box-shadow: 3px 3px 10px grey;
 }
