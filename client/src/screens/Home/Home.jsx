@@ -83,7 +83,7 @@ const Home = (props) => {
               {bottle}
               <p className="bottle-text">HOT SAUCES</p>
             </div>
-          </Link>
+          </Link>:
           <Link to="/peppers">
             <div className="fa-pepper">
               {pepper}

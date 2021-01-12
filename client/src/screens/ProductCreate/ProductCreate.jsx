@@ -37,7 +37,7 @@ const ProductCreate = (props) => {
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
-          className="input-name"
+          className="input-name-add"
           placeholder="Name"
           value={product.name}
           name="name"
