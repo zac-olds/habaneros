@@ -46,7 +46,6 @@ const ProductDetail = (props) => {
     if (resp.data) {
       history.push("/products");
     }
-    // cart screen '/cart'
   };
 
   return (
