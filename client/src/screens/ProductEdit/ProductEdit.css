@@ -90,7 +90,11 @@
   .edit-product-image {
     width: 100px;
   }
-  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center; 
+  }
   .edit-input-image-link {
     width: 300px;
     font-size: 10px;
@@ -189,7 +193,8 @@
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .edit-product-image {
-    width: 100px;
+    width: 300px;
+    height: 450px;
   }
   
   .edit-input-image-link {
