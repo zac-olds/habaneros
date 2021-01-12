@@ -1,7 +1,8 @@
 // COMPONENTS
 import React from "react";
 import Layout from "../../components/shared/Layout/Layout";
-
+import {useState} from "react";
+import Popup from "../../components/PopupScoville/Popup";
 // DEPENDENCIES
 import {Link} from "react-router-dom";
 
@@ -17,38 +18,63 @@ import "./Home.css";
 // SLIDER
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import "react-awesome-slider/dist/styles.css";
+import CoreStyles from "react-awesome-slider/dist/styles.css";
+import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 
 const Home = (props) => {
   const pepper = <FontAwesomeIcon icon={faPepperHot} />;
   const bottle = <FontAwesomeIcon icon={faWineBottle} />;
   const flame = <FontAwesomeIcon icon={faFireAlt} />;
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  const onClickHandler = () => {
+    setShowPopup(!showPopup);
+  };
+
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
     <Layout user={props.user}>
       <div className="home">
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={9000}>
+        <AutoplaySlider
+          animation="foldOutAnimation"
+          cssModule={[CoreStyles, AnimationStyles]}
+          fillParent={true}
+          play={true}
+          bullets={false}
+          cancelOnInteraction={false}
+          interval={9000}
+        >
           <div>
-            <div className="image-1" />
-            {/* <img src="https://i.imgur.com/zwu6CLI.jpg" alt="image1" /> */}
+            <div className="image-1">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-2" />
-            {/* <img src="https://i.imgur.com/S0qmii9.jpg" alt="image2" /> */}
+            <div className="image-2">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-3" />
-            {/* <img src="https://i.imgur.com/6B2F3Vg.jpg" alt="image3" /> */}
+            <div className="image-3">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-4" />
-            {/* <img src="https://i.imgur.com/pmVwWev.jpg" alt="image4" /> */}
+            <div className="image-4">
+              <div className="image-filter" />
+            </div>
           </div>
           <div>
-            <div className="image-5" />
-            {/* <img src="https://i.imgur.com/J9yq8tN.jpg" alt="image5" /> */}
+            <div className="image-5">
+              <div className="image-filter" />
+            </div>
+          </div>
+          <div>
+            <div className="image-6">
+              <div className="image-filter" />
+            </div>
           </div>
         </AutoplaySlider>
         <div className="fa-container">
@@ -64,10 +90,17 @@ const Home = (props) => {
               <p className="pepper-text">PEPPER INFO</p>
             </div>
           </Link>
-          <Link to="scoville">
-            <div className="fa-flame">
+          <Link to="/">
+            <div className="fa-flame" onClick={onClickHandler}>
               {flame}
               <p className="flame-text">SCOVILLE SCALE</p>
+              <div className="popup">
+                {showPopup ? (
+                  <Popup
+                    closePopup={onClickHandler}
+                  />
+                ) : null}
+              </div>
             </div>
           </Link>
         </div>

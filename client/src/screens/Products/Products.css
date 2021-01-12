@@ -1,19 +1,18 @@
 .products {
-  width: 90vw;
+  /* width: 90vw; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
 }
 
-
 @media (max-width: 500px) {
   .products {
-      width: 100%;
-      /* justify-content: space-around; */
-      align-items: center;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 20px;
   }
-
 }
 @media only screen and (max-width : 320px) {
   .products {
@@ -22,9 +21,9 @@
   }
 }
 
-  @media only screen  and (min-width : 1224px) {
+@media only screen  and (min-width : 1224px) {
     .products {
       width: 100%;
       align-items: center;
-    }
   }
+}

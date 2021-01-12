@@ -9,5 +9,6 @@ router.get('/:id', controllers.getProduct)
 router.post('/', restrict, controllers.createProduct)
 router.put('/:id', restrict, controllers.updateProduct)
 router.delete('/:id', restrict, controllers.deleteProduct)
+router.put('/cart/:username', restrict, controllers.addProductToUser)
 
 module.exports = router

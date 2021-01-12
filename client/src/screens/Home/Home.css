@@ -1,26 +1,29 @@
-.awssld_wrapper {
-  height: 100vh;
-}
-
 .home {
   width: 100vw;
   height: 100vh;
   position: relative;
+  /* top: 80px; */
   /* background-color: #0b2512;  */
-  top: -20px;
 }
 
-.home > img {
+.image-filter {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), white);
+  height: 100%;
   width: 100%;
-  height: auto;
 }
 
+/* THE CAROUSEL */
 .awssld {
   height: 100vh;
+  width: 100vw;
+}
+
+.awssld--foldOutAnimation {
+  --fold-out-perspective: none !important;
 }
 
 .image-1 {
-  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
+  background-image: url("https://i.imgur.com/JdcwhP7.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -41,7 +44,7 @@
 }
 
 .image-4 {
-  background-image: url("https://i.imgur.com/pmVwWev.jpg");
+  background-image: url("https://i.imgur.com/1ioPcY4.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -54,16 +57,22 @@
   width: 100vw;
 }
 
+.image-6 {
+  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
 .fa-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: absolute;
-  top: 0px;
   z-index: 3;
   margin: 0 auto;
   width: 100%;
-  top: 35vh;
+  top: 70vh;
 }
 
 .fa-pepper,
@@ -92,12 +101,21 @@
 .pepper-text,
 .bottle-text,
 .flame-text {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 700;
   color: black;
 }
 
-@media (max-width: 400px) {
-  .home {
-    padding: 100px 40px;
+@media (max-width: 710px) {
+  .fa-pepper,
+  .fa-bottle,
+  .fa-flame {
+    font-size: 50px;
+    margin: 0px 20px 0px 20px;
+  }
+  .pepper-text,
+  .bottle-text,
+  .flame-text {
+    font-size: 12px;
   }
 }

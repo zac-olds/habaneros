@@ -1,0 +1,113 @@
+.popup-img {
+  background-image: url("https://i.imgur.com/7lw0Fg5.jpg");
+  background-size: cover;
+  width: 200px;
+  height: 105px;
+}
+
+.popup {
+  position: fixed;
+  width: 200px;
+  height: 105px;
+  top: 0px;
+  left: -70px;
+  right: 0;
+  bottom: 90px;
+  margin: auto;
+
+}
+
+.popup_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  left: 5%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  border-radius: 20px;
+  background: white;
+}
+
+.popup-btn {
+  font-size: 13px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  height: 35px;
+  width: 80px;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  background-color: #0b2512;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .popup {
+    width: 250px;
+    height: 240px;
+    left: -200px;
+    bottom: 520px;
+  }
+  .popup-img {
+    width: 250px;
+    height: 240px;
+    border-radius: 10%;
+  }
+  .popup-btn {
+    height: 28px;
+    width: 78px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .popup {
+    position: fixed;
+    width: 40vw;
+    height: 50vh;
+    left: -450px;
+    bottom: 50vh;
+    margin: auto;
+    border-radius: 10%;
+  }
+  .popup-img {
+    width: 40vw;
+    height: 28vh;
+    margin-top: 5%;
+    border-radius: 10%;
+  }
+}
+@media only screen and (max-device-width: 280px){
+  .popup {
+    position: fixed;
+    width: 250px;
+    height: 240px;
+    left: -185px;
+    bottom: 575px;
+    margin: auto;
+    border-radius: 10%;
+  }
+  .popup-img {
+    width: 250px;
+    height: 240px;
+    margin-top: 5%;
+    border-radius: 10%;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+  .popup {
+    position: fixed;
+    width: 330px;
+    height: 310px;
+    left: -385px;
+    bottom: 700px;
+  }
+  .popup-img {
+    width: 330px;
+    height: 310px;
+  }
+}
