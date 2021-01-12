@@ -1,8 +1,29 @@
-.pepper-container {
+/* .pepper-container {
   display: flex;
   flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 85px;
   height: 100vh;
+} */
+
+.pepper-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 75px;
+}
+
+@media (max-width: 870px) {
+  .pepper-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pepper-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
 }

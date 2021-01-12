@@ -5,10 +5,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
+
+.pepper-info-box {
+  background-color: white;
+}
+
 .pepper-img {
   height: 200px;
   width: 200px;
-  border-radius: 100%;
+  border-radius: 25px;
   box-shadow: 3px 3px 10px grey;
+}
+
+@media (max-width: 700px) {
+  .pepper-img {
+    height: 300px;
+    width: 300px;
+  }
+  .pepper-box {
+    height: 50vh;
+    width: 50vw;
+  }
 }
