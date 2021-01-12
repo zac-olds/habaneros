@@ -97,8 +97,6 @@ const Home = (props) => {
               <div className="popup">
                 {showPopup ? (
                   <Popup
-                    img="https://i.imgur.com/7lw0Fg5.jpg"
-                    text="Scoville Scale"
                     closePopup={onClickHandler}
                   />
                 ) : null}
