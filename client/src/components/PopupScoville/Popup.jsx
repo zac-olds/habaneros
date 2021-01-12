@@ -4,12 +4,10 @@ import './Popup.css';
 function Popup (props) {
   
     return (
-      <div className='popup'>
+      <div>
         <div className='popup_inner'>
-          {/* <p type="text" className='popup-p'>
-            {props.text}</p> */}
-          <img className='popup-img'src = {props.img}></img>
-        <button className='popup-btn' onClick={props.closePopup}>Close Me</button>
+          <div className='popup-img' src={props.img}></div>
+          <button className='popup-btn' onClick={props.closePopup}>Close Me</button>
         </div>
       </div>
     );
