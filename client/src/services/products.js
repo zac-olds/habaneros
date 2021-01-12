@@ -45,16 +45,6 @@ export const deleteProduct = async id => {
   }
 } 
 
-// Cart services
-// export const getCartProducts = async cart => {
-//   try {
-//     const response = await api.post('/products', cart)
-//     return response.data
-//   } catch (error) {
-//     throw error
-//   }
-// }
-
 export const addProductToUser = async (username, product) => {
   try {
     const response = await api.put(`/products/cart/${username}`, product)
