@@ -99,25 +99,25 @@ a {
 
 @media only screen and (min-device-width : 540px){
   .store-name {
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: -1.5px;
     margin-right: 2%;
   }
     .link-welcome {
-      font-size: 13px;
+      font-size: 15px;
     }
     .nav {
       height: 25px;
     }
   
     .link {
-      font-size: 13px;
+      font-size: 15px;
     }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .store-name {
-    font-size: 30px;
+    font-size: 40px;
   }
     .link-welcome {
       font-size: 15px;
@@ -132,7 +132,7 @@ a {
 
 @media only screen  and (min-width : 1224px) {
   .store-name {
-    font-size: 35px;
+    font-size: 45px;
   }
     .link-welcome {
       font-size: 18px;

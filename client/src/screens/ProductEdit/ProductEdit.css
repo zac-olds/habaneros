@@ -1,18 +1,17 @@
 .product-edit {
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  padding: 0px;
+  padding-top: 50px;
+  flex-direction: column;
 }
 
 .image-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .edit-product-image {
   width: 500px;
-  padding: 0 40px;
   padding-bottom: 5px;
 }
 
@@ -36,7 +35,7 @@
   font-weight: bold;
   font-size: 40px;
   letter-spacing: 1px;
-  padding: 5px;
+  padding: 0px;
 }
 
 .edit-brand {
@@ -85,27 +84,205 @@
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
-  .input-name {
-      margin-left: -10px;
-      padding-left: -10px;
-      font-size: 26px;
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .edit-product-image {
+    width: 100px;
   }
-  .edit-form {
-      padding: 0px;
-  }
-  .textarea-description {
-      width: 100%;
-      padding: 0px;
-  }
-  .product-edit {
-      width: 100%;
-      flex-direction: column;
+  
+  .edit-input-image-link {
+    width: 300px;
+    font-size: 10px;
   }
   .image-container {
-      width: 100%;
+    width: 50%;
+}
+  
+  .edit-name {
+    font-size: 10px;
+  }
+  
+  .edit-brand {
+    font-size: 10px;
+  }
+  
+  .edit-price {
+    font-size: 10px;
+   
+  }
+  
+  .edit-scoville {
+    font-size: 10px;
+ 
+  }
+  
+  .edit-description {
+    font-size: 10px;
+  }
+  
+  .save-button {
+    font-size: 13px;
+    height: 35px;
+    width: 70px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-device-width:540px) {
+  .product-edit {
+    display: flex;
+    padding: 0px;
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
   }
   .edit-product-image {
-      width: 300px;
+    width: 230px;
+    height: 350px;
   }
+  
+  .edit-input-image-link {
+    width: 300px;
+    font-size: 16px;
+  }
+  .image-container {
+    width: 50%;
+}
+  
+  .edit-name {
+    font-size: 18px;
+  }
+  
+  .edit-brand {
+    font-size: 18px;
+  }
+  
+  .edit-price {
+    font-size: 18px;
+   
+  }
+  
+  .edit-scoville {
+    font-size: 18px;
+ 
+  }
+  
+  .edit-description {
+    font-size: 16px;
+  }
+  
+  .save-button {
+    font-size: 16px;
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  } 
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .edit-product-image {
+    width: 100px;
+  }
+  
+  .edit-input-image-link {
+    width: 300px;
+    font-size: 15px;
+  }
+  .image-container {
+    width: 50%;
+}
+  
+  .edit-name {
+    font-size: 15px;
+  }
+  
+  .edit-brand {
+    font-size: 15px;
+  }
+  
+  .edit-price {
+    font-size: 15px;
+   
+  }
+  
+  .edit-scoville {
+    font-size: 15px;
+ 
+  }
+  
+  .edit-description {
+    font-size: 15px;
+  }
+  
+  .save-button {
+    font-size: 13px;
+    height: 35px;
+    width: 70px;
+    margin-top: 10px;
+  } 
+}
+
+@media only screen  and (min-width : 1224px) {
+  .product-edit {
+    display: flex;
+    padding: 0px;
+    padding-top: 50px;
+    flex-direction: row;
+  }
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+  }
+  .edit-product-image {
+    width: 275px;
+    height: 400px;
+  }
+  
+  .edit-input-image-link {
+    width: 300px;
+    font-size: 20px;
+  }
+  .image-container {
+    width: 50%;
+}
+  
+  .edit-name {
+    font-size: 25px;
+  }
+  
+  .edit-brand {
+    font-size: 25px;
+  }
+  
+  .edit-price {
+    font-size: 25px;
+   
+  }
+  
+  .edit-scoville {
+    font-size: 25px;
+ 
+  }
+  
+  .edit-description {
+    font-size: 20px;
+  }
+  
+  .save-button {
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  } 
 }
