@@ -50,7 +50,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .product {
       width: 70%;
       height: 1.7%;
