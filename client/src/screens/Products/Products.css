@@ -1,5 +1,5 @@
 .products {
-  width: 90vw;
+  /* width: 90vw; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -8,8 +8,9 @@
 
 @media (max-width: 500px) {
   .products {
-      width: 100%;
-      justify-content: space-around;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 20px;
   }
-
 }

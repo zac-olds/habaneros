@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./ProductEdit.css";
-import {useParams, Redirect} from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
-import {getProduct, updateProduct} from "../../services/products";
+import { getProduct, updateProduct } from "../../services/products";
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
@@ -15,7 +15,7 @@ const ProductEdit = (props) => {
   });
 
   const [isUpdated, setUpdated] = useState(false);
-  let {id} = useParams();
+  let { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -26,7 +26,7 @@ const ProductEdit = (props) => {
   }, [id]);
 
   const handleChange = (event) => {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
     setProduct({
       ...product,
       [name]: value,
@@ -65,7 +65,7 @@ const ProductEdit = (props) => {
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
-            className="input-name"
+            className="edit-name"
             placeholder="Name"
             value={product.name}
             name="name"
@@ -74,7 +74,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-brand"
+            className="edit-brand"
             placeholder="Brand"
             value={product.brand}
             name="brand"
@@ -83,27 +83,27 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-scoville"
+            className="edit-scoville"
             placeholder="Scoville"
-            value={product.scoville}
+            value={`${product.scoville} SHU`}
             name="scoville"
             required
             autoFocus
             onChange={handleChange}
           />
           <input
-            className="input-price"
+            className="edit-price"
             placeholder="Price"
-            value={product.price}
+            value={`$${product.price}.00`}
             name="price"
             required
             onChange={handleChange}
           />
           <textarea
-            className="textarea-description"
+            className="edit-description"
             rows={10}
-            cols={78}
-            placeholder="Descritption"
+            cols={60}
+            placeholder="Description"
             value={product.description}
             name="description"
             required

@@ -2,7 +2,7 @@
 
 ## Wireframe
 
-[Link to wireframe](https://xd.adobe.com/view/645a86af-b619-44fa-9c4b-84942da0c27f-3109/).
+[Link to wireframe](https://xd.adobe.com/view/23ae2f8e-983d-46cb-8457-1e415419fedc-76fd/).
 
 ## Component Heirarchy
 

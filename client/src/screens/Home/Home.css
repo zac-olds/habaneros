@@ -1,5 +1,121 @@
-@media (max-width: 400px) {
-  .home {
-    padding: 100px 40px;
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* top: 80px; */
+  /* background-color: #0b2512;  */
+}
+
+.image-filter {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), white);
+  height: 100%;
+  width: 100%;
+}
+
+/* THE CAROUSEL */
+.awssld {
+  height: 100vh;
+  width: 100vw;
+}
+
+.awssld--foldOutAnimation {
+  --fold-out-perspective: none !important;
+}
+
+.image-1 {
+  background-image: url("https://i.imgur.com/JdcwhP7.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-2 {
+  background-image: url("https://i.imgur.com/S0qmii9.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-3 {
+  background-image: url("https://i.imgur.com/6B2F3Vg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-4 {
+  background-image: url("https://i.imgur.com/1ioPcY4.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-5 {
+  background-image: url("https://i.imgur.com/J9yq8tN.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image-6 {
+  background-image: url("https://i.imgur.com/zwu6CLI.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.fa-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+  margin: 0 auto;
+  width: 100%;
+  top: 70vh;
+}
+
+.fa-pepper,
+.fa-bottle,
+.fa-flame {
+  font-size: 100px;
+  margin: 0px 50px 0px 50px;
+  filter: drop-shadow(5px 5px 10px gainsboro);
+}
+
+.fa-flame:hover {
+  color: #ffa400;
+  transform: scale(1.2);
+}
+
+.fa-pepper:hover {
+  color: #ed2939;
+  transform: scale(1.2);
+}
+
+.fa-bottle:hover {
+  color: #ffe135;
+  transform: scale(1.2);
+}
+
+.pepper-text,
+.bottle-text,
+.flame-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+@media (max-width: 710px) {
+  .fa-pepper,
+  .fa-bottle,
+  .fa-flame {
+    font-size: 50px;
+    margin: 0px 20px 0px 20px;
+  }
+  .pepper-text,
+  .bottle-text,
+  .flame-text {
+    font-size: 12px;
   }
 }

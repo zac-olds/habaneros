@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  box-shadow: 0px 0px 3px 1px #CECECE;
+  box-shadow: 0px 0px 3px 1px #cecece;
   transition: 250ms all;
   padding: 20px;
   margin-bottom: 60px;
@@ -11,7 +11,7 @@
 
 .product:hover {
   transform: scale(1.02);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .product-image {
@@ -21,34 +21,45 @@
 .product-name {
   font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 .product-brand {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 .product-scoville {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px;
-}
-.product-description {
-  font-size: 15px;
-  padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
-.price {
-  font-size: 18px;
+.product-price {
+  font-size: 24px;
   padding: 10px;
+  font-family: "Josefin Slab", serif;
+  color: black;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
   .product {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 70%;
+    height: 1.7%;
+    margin-bottom: 20px;
+    margin-top: 15%;
   }
   .product-image {
-      width: 180px;
-      margin: 15px;
-      padding: 10px;
+    width: 90px;
+    height: 130px;
+    margin: 15px;
+    padding: 10px;
   }
 }

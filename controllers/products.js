@@ -1,5 +1,7 @@
+const User = require('../models/user')
 const Product = require('../models/product')
 const db = require('../db/connection')
+
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -62,10 +64,23 @@ const deleteProduct = async (req, res) => {
   }
 }
 
+const addProductToUser = async (req, res) => {
+  // get the user PUT
+  const user = await User.find({ username: req.params.username })
+  // push the existing product id into user.products array
+  const product = req.body
+  if (user) {
+    user[0].products.push(product._id);
+    user[0].save();
+    res.json(true)
+  }
+}
+
 module.exports = {
   createProduct,
   getProducts,
   getProduct,
   updateProduct,
-  deleteProduct
+  deleteProduct,
+  addProductToUser
 }
