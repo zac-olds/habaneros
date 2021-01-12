@@ -116,172 +116,136 @@ input {
   background: #8D0801;
 }
 
+@media only screen and (max-device-width: 280px) {
+  .form-container {
+    width: 50%;
+    height: 45%;
+    margin-top: 10%;
+    margin-left: 18%;
+    margin-bottom: 13%;
+}
+  .form-container h3 {
+    font-size: 10px;
+  }
+  
+  .form-container form input {
+    width: 100%;
+    height: 20px;
+    padding: 0.2em ;
+    font-size: 10px;
+    align-self: center;
+  }
+  
+  .form-container form button {
+    width: 49%;
+    height: 23px;
+    font-size: 10px;
+  }  
 
-@media (max-width: 500px) {
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .form-container {
     width: 60%;
     height: 55%;
-    margin-top: 40%;
+    margin-top: 10%;
     margin-left: 15%;
     margin-bottom: 13%;
 }
   .form-container h3 {
-    font-size: 13px;
+    font-size: 11px;
   }
   
   .form-container form input {
     width: 100%;
     height: 20px;
     padding: 0.3em ;
-    font-size: 13px;
+    font-size: 11px;
     align-self: center;
   }
   
   .form-container form button {
-    width: 45%;
-    height: 27px;
+    width: 42%;
+    height: 25px;
     font-size: 11px;
   }  
 }
 
-@media (min-width: 520px) {
+@media only screen and (min-device-width : 540px) {
 
   .form-container {
     width: 60%;
     height: 48%;
-    margin-top: 35%;
+    margin-top: 10%;
     margin-left: 18%;
   }
   
   .form-container h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
   
   .form-container form input {
     width: 80%;
     height: 15px;
+    font-size: 13px;
+  }
+  
+  .form-container form button {
+
+    height: 30px;
+    width: 45%;
+    font-size: 13px;
+    margin-top: 5%;
+  }  
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .form-container {
+    width: 48%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 24%;
+  }
+  .form-container h3 {
+    font-size: 15px;
+  }
+  
+  .form-container form input {
     font-size: 15px;
   }
   
   .form-container form button {
 
     height: 35px;
-    font-size: 13px;
+    width: 45%;
+    font-size: 15px;
+    margin-top: 5%;
   }  
 }
 
-@media (min-width: 677px) {
+@media only screen  and (min-width : 1224px) {
   .form-container {
-    width: 60%;
-    height: 58%;
-    margin-top: 23%;
-    margin-left: 18%;
-  }
-}
-
-@media (min-width: 768px) {
-  .form-container {
-    width: 60%;
-    height: 61%;
-    margin-top: 15%;
-    margin-left: 18%;
-  }
-}
-
-
- @media (min-width: 1000px) {
-  
-  .form-container {
-    width: 65%;
-    height: 63%;
-    margin-top: 15%;
-    margin-left: 15%;
+    width: 45%;
+    height: 65%;
+    margin-top: 6%;
+    margin-left: 26%;
   }
   .form-container h3 {
-    font-size: 15px;
-    margin-top: 5%;
+    font-size: 16px;
   }
   
   .form-container form input {
-    height: 30px;
-    padding: 0.5em ;
-    height: 37px;
-    font-size: 15px;
-    align-self: center;
+    font-size: 16px;
   }
   
   .form-container form button {
-    
-    height: 50px;
-    font-size: 15px;
-  }  
-} 
 
-
-@media (min-width: 1108px){
-  .form-container {
-    align-self: center;
-    padding: 1em;
-    width: 40%;
-    height: 60%;
-    margin-top: 15%;
-    margin-left: 28%;
-  }
-}
-
-@media (min-width: 1186px) {
-  .form-container {
-    align-self: center;
-    padding: 1em;
-    width: 40%;
-    height: 60%;
-    margin-top: 12%;
-    margin-left: 28%;
+    height: 40px;
+    width: 35%;
+    font-size: 16px;
+    margin-top: 5%;
   }
   
 }
 
-@media (min-width: 1200px) {
-  .form-container {
-    align-self: center;
-    padding: 1em;
-    width: 45%;
-    height: 68%;
-    margin-top: 10%;
-    margin-left: 23%;
-  }
-  
-}
-
-@media (min-width: 1600px) {
-  .form-container {
-    margin-top: 7%;
-    margin-left: 23%;
-  }
-  
-}
-
-@media (min-width: 1900px) {
-  .form-container {
-    margin-top: 10%;
-    margin-left: 25%;
-  }
-  
-}
-
-@media (min-width: 2300px) {
-  .form-container {
-    margin-top: 9%;
-    margin-left: 25%;
-  }
-  
-}
-
-@media (min-width: 2500px) {
-  .form-container {
-    margin-top: 7%;
-    margin-left: 25%;
-    height: 73%;
-  }
-}
