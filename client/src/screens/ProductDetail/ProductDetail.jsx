@@ -7,13 +7,18 @@ import {
   addProductToUser,
 } from "../../services/products";
 import {useParams, Link, useHistory} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  // const [quantity, setQuantity] = useState(1);
+
   const {id} = useParams();
   const history = useHistory();
+
+  // Font Awesome Icon
+  const cart = <FontAwesomeIcon icon={faShoppingCart} />;
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -70,17 +75,9 @@ const ProductDetail = (props) => {
             >
               Delete
             </button>
-          </div>
-          <div>
             <button className="cart-button" onClick={addToCart}>
-              Add to Cart
+              {cart}
             </button>
-            {/* <input
-              className="cart-quantity"
-              type="number"
-              value={quantity}
-              onChange={handleChange}
-            /> */}
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import React from 'react';
-import './Popup.css';
+import React from "react";
+import "./Popup.css";
 
 function Popup (props) {
   
@@ -10,9 +10,8 @@ function Popup (props) {
           <button className='popup-btn' onClick={props.closePopup}>Close Me</button>
         </div>
       </div>
-    );
- 
+    </div>
+  );
 }
 
 export default Popup;
-
