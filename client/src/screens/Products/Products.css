@@ -14,3 +14,16 @@
     padding: 20px;
   }
 }
+@media only screen and (max-width : 320px) {
+  .products {
+    width: 40%;
+    align-items: center;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+    .products {
+      width: 100%;
+      align-items: center;
+  }
+}
