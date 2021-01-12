@@ -1,5 +1,7 @@
 # Habanero's Marketplace
 
+![Landing Page](https://i.imgur.com/af3pNkH.png)
+
 ## Wireframe
 
 [Link to wireframe](https://xd.adobe.com/view/23ae2f8e-983d-46cb-8457-1e415419fedc-76fd/).
@@ -34,53 +36,54 @@ A full stack online marketplace app for hot sauce enthusiasts. Users can create 
 
 ### Client (Front End)
 
-- Have a working, interactive React app, built using npx create-react-app client `Incomplete`
-- Have at least 6 separate, rendered components in an organized and understandable React file structure. `Incomplete`
-- Utilize functional and class React components appropriately. `Incomplete`
-- Use only React for DOM Manipulation. `Incomplete`
-- Consume data from your API, and render that data in your components. `Incomplete`
-- Utilize React Router, for client-side routing. `Incomplete`
-- Authentication `Incomplete`
-- Landing Screen `Incomplete`
-- Listing Screen `Incomplete`
-- Detail Screen `Incomplete`
-- Edit/Create Screen `Incomplete`
+- Have a working, interactive React app, built using npx create-react-app client `Complete`
+- Have at least 6 separate, rendered components in an organized and understandable React file structure. `Complete`
+- Utilize functional and class React components appropriately. `Complete`
+- Use only React for DOM Manipulation. `Complete`
+- Consume data from your API, and render that data in your components. `Complete`
+- Utilize React Router, for client-side routing. `Complete`
+- Authentication `Complete`
+- Landing Screen `Complete`
+- Listing Screen `Complete`
+- Detail Screen `Complete`
+- Edit/Create Screen `Complete`
 
 ### Server (Back End)
 
-- Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. `Incomplete`
-- Authentication `Incomplete`
+- Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB. `Complete`
+- Authentication `Complete`
 
 ### Styling
 
-- Be styled with CSS. `Incomplete`
-- Use flexbox (display: flex) or CSS Grid. `Incomplete`
-- Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile). `Incomplete`
+- Be styled with CSS. `In Progress`
+- Use flexbox (display: flex) or CSS Grid. `Complete`
+- Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile). `Complete`
 
 ### Linting
 
-- Indent properly. In Progress
-- Utilize high-quality, semantic variable names. `In Progress`
-- Follow camelCase and kebab-case conventions. `In Progress`
-- Remove unnecessary boilerplate React files and code. `In Progress`
+- Indent properly. `Complete`
+- Utilize high-quality, semantic variable names. `Complete`
+- Follow camelCase and kebab-case conventions. `Complete`
+- Remove unnecessary boilerplate React files and code. `Complete`
 - Remove all console.log()s and commented out code (functional notes/comments are okay). `Incomplete`
 
 ### Deployment
 
-- Deploy the fully functional front-end via Netlify. `Incomplete`
-- Deploy the back-end via Heroku. `Incomplete`
-- Deploy the MongoDB database on MongoDB Atlas. `Incomplete`
+- Deploy the fully functional front-end via Netlify. `Complete`
+- Deploy the back-end via Heroku. `Complete`
+- Deploy the MongoDB database on MongoDB Atlas. `Complete`
 
 ### Procedural
 
-- Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50. `In Progress`
-- Use effective and safe branching and merging processes. `In Progress`
+- Have frequent commits from every team member dating back to the very beginning of the project. These commits should total to or exceed 50. `Complete`
+- Use effective and safe branching and merging processes. `Complete`
 
 ## Post-MVP
 
-- Trending on landing page
-- Shopping cart
-- User reviews
-- Recommendations
-- Search
-- Sort aphab
+- Incorporate shopping cart screen to consume API data supplied by the addProductToUser controller.
+- Incorporate user reviews of hot sauces.
+- More images for hot sauces in details page.
+- Change password user functionality.
+- Hot sauce recommendations for individual users.
+- Search functionality for the products page.
+- Sort functionalities for the products page.

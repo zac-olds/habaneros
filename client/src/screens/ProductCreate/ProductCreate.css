@@ -6,52 +6,54 @@
   justify-content: space-evenly;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 48px;
-    font-family: "Josefin Slab", serif;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
-    color: black;
+  font-family: "Josefin Slab", serif;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  color: black;
 }
 
 textarea {
   font-size: 24px;
   font-family: "Josefin Slab", serif;
-  
 }
 
-.input-name {
+.input-name-add {
   font-family: "Josefin Slab", serif;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin-left: 10%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-left: 10%;
 }
 .input-brand {
   font-family: "Josefin Slab", serif;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin-left: 10%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-left: 10%;
 }
 .input-scoville {
   font-family: "Josefin Slab", serif;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin-left: 10%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-left: 10%;
 }
 .input-price {
   font-family: "Josefin Slab", serif;
@@ -63,14 +65,14 @@ textarea {
   margin-left: 10%;
 }
 
-.textarea-description{
+.textarea-description {
   font-family: "Josefin Slab", serif;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin-left: 10%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-left: 10%;
 }
 
 .input-image-link {
@@ -82,28 +84,173 @@ textarea {
 }
 
 .submit-button {
-
   font-size: 20px;
   font-family: "Josefin Slab", serif;
   font-weight: bold;
   height: 40px;
   width: 100px;
   margin-top: 40px;
-  background-color: #0B2512;
+  margin-bottom: 40px;
+  background-color: #0b2512;
   color: white;
   border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
+  box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
   margin-left: 10%;
-
 }
 
-@media (max-width: 500px) {
-  .create-form {
-      padding-top: 150px;
+@media only screen and (min-device-width: 280px) {
+  .input-name-add {
+    font-size: 13px;
   }
-  
-  input, textarea {
-      font-size: 28px;
+  .input-brand {
+    font-size: 13px;
+  }
+  .input-scoville {
+    font-size: 13px;
+  }
+  .input-price {
+    font-size: 13px;
+  }
+
+  .textarea-description {
+    font-size: 13px;
+  }
+
+  .input-image-link {
+    font-size: 13px;
+  }
+
+  .submit-button {
+    font-size: 11px;
+    height: 25px;
+    width: 70px;
+    margin-top: 40px;
   }
 }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .input-name-add {
+    font-size: 16px;
+  }
+  .input-brand {
+    font-size: 16px;
+  }
+  .input-scoville {
+    font-size: 16px;
+  }
+  .input-price {
+    font-size: 16px;
+  }
+
+  .textarea-description {
+    font-size: 16px;
+  }
+
+  .input-image-link {
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 13px;
+    height: 32px;
+    width: 75px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 540px) {
+  .input-name-add {
+    font-size: 18px;
+  }
+  .input-brand {
+    font-size: 18px;
+  }
+  .input-scoville {
+    font-size: 18px;
+  }
+  .input-price {
+    font-size: 18px;
+  }
+
+  .textarea-description {
+    font-size: 18px;
+  }
+
+  .input-image-link {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    height: 32px;
+    width: 75px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .input-name-add {
+    font-size: 20px;
+  }
+  .input-brand {
+    font-size: 20px;
+  }
+  .input-scoville {
+    font-size: 20px;
+  }
+  .input-price {
+    font-size: 20px;
+  }
+
+  .textarea-description {
+    font-size: 20px;
+  }
+
+  .input-image-link {
+    font-size: 20px;
+  }
+
+  .submit-button {
+    font-size: 15px;
+    height: 32px;
+    width: 75px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .input-name-add {
+    font-size: 25px;
+  }
+  .input-brand {
+    font-size: 25px;
+  }
+  .input-scoville {
+    font-size: 25px;
+  }
+  .input-price {
+    font-size: 25px;
+  }
+
+  .textarea-description {
+    font-size: 25px;
+  }
+
+  .input-image-link {
+    font-size: 25px;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    height: 35px;
+    width: 88px;
+    margin-top: 40px;
+    
+  }
+}
+
+
+
+

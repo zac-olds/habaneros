@@ -1,13 +1,13 @@
 // COMPONENTS
 import React from "react";
 import Layout from "../../components/shared/Layout/Layout";
-import { useState } from "react";
+import {useState} from "react";
 import Popup from "../../components/PopupScoville/Popup";
 // DEPENDENCIES
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 // STYLING AND ICONS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faPepperHot,
   faWineBottle,
@@ -22,7 +22,6 @@ import CoreStyles from "react-awesome-slider/dist/styles.css";
 import AnimationStyles from "react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 
 const Home = (props) => {
-  const [hover, setHover] = useState(false);
   const pepper = <FontAwesomeIcon icon={faPepperHot} />;
   const bottle = <FontAwesomeIcon icon={faWineBottle} />;
   const flame = <FontAwesomeIcon icon={faFireAlt} />;
@@ -47,11 +46,7 @@ const Home = (props) => {
           cancelOnInteraction={false}
           interval={9000}
         >
-          <div
-            className="pepper-box"
-            onMouseOver={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-          >
+          <div>
             <div className="image-1">
               <div className="image-filter" />
             </div>
@@ -88,7 +83,7 @@ const Home = (props) => {
               {bottle}
               <p className="bottle-text">HOT SAUCES</p>
             </div>
-          </Link>
+          </Link>:
           <Link to="/peppers">
             <div className="fa-pepper">
               {pepper}
