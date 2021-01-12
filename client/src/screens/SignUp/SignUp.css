@@ -114,9 +114,6 @@ input {
 }
 
 @media (max-width: 500px) {
-  .link {
-    font-size: 11px;
-  }
 
   .form-container-signup {
     width: 60%;
@@ -145,9 +142,6 @@ input {
 }
 
 @media (min-width: 520px) {
-  .link {
-    font-size: 16px;
-  }
   .form-container-signup {
     width: 60%;
     height: 55%;
@@ -199,9 +193,6 @@ input {
 }
 
 @media (min-width: 1000px) {
-  .link {
-    font-size: 18px;
-  }
   .form-container-signup {
     width: 65%;
     height: 69%;
@@ -263,9 +254,6 @@ input {
     height: 70%;
     margin-top: 10%;
     margin-left: 28%;
-  }
-  .link {
-    font-size: 18px;
   }
 }
 

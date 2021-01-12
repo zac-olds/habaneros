@@ -45,6 +45,24 @@
   cursor: pointer;
 }
 
+@media only screen and (max-device-width: 280px){
+  .popup {
+    position: fixed;
+    width: 250px;
+    height: 240px;
+    left: -185px;
+    bottom: 575px;
+    margin: auto;
+    border-radius: 10%;
+  }
+  .popup-img {
+    width: 250px;
+    height: 240px;
+    margin-top: 5%;
+    border-radius: 10%;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .popup {
     width: 250px;
@@ -76,23 +94,6 @@
   .popup-img {
     width: 40vw;
     height: 28vh;
-    margin-top: 5%;
-    border-radius: 10%;
-  }
-}
-@media only screen and (max-device-width: 280px){
-  .popup {
-    position: fixed;
-    width: 250px;
-    height: 240px;
-    left: -185px;
-    bottom: 575px;
-    margin: auto;
-    border-radius: 10%;
-  }
-  .popup-img {
-    width: 250px;
-    height: 240px;
     margin-top: 5%;
     border-radius: 10%;
   }
