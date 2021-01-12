@@ -114,12 +114,6 @@ input {
 }
 
 @media (max-width: 500px) {
-  /* .store-name {
-    max-width: 50%;
-    font-size: 20px;
-    margin-right: 1%;
-    letter-spacing: -1.5px;
-  } */
   .link {
     font-size: 11px;
   }
@@ -151,10 +145,6 @@ input {
 }
 
 @media (min-width: 520px) {
-  /* .store-name {
-    max-width: 50%;
-    font-size: 28px;
-  } */
   .link {
     font-size: 16px;
   }
@@ -209,10 +199,6 @@ input {
 }
 
 @media (min-width: 1000px) {
-  /* .store-name {
-    max-width: 50%;
-    font-size: 35px;
-  } */
   .link {
     font-size: 18px;
   }
