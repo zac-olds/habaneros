@@ -1,10 +1,9 @@
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Slab", serif;
   font-weight: bold;
-  height: 100%;
+  /* height: 100%; */
 }
 
 button {
@@ -14,11 +13,6 @@ button {
   border-radius: 3px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-}
-
-
-.container {
-  height: 100%;
 }
 
 .row {
@@ -43,11 +37,10 @@ input {
   font-family: "Josefin Slab", serif;
   font-weight: bold;
   color: black;
-
 }
 
 .form-container .danger {
-  background: #8D0801;
+  background: #8d0801;
 }
 
 .form-container h3 {
@@ -77,7 +70,7 @@ input {
 
 .form-container form input:focus,
 .form-container form input:active {
-  border: 2px solid #0B2512;
+  border: 2px solid #0b2512;
 }
 
 .form-container form input:valid {
@@ -87,7 +80,7 @@ input {
 .form-container form button {
   width: 50%;
   margin: 1em auto;
-  background:#0B2512;
+  background: #0b2512;
   border: none;
   color: white;
   margin-top: 8%;
@@ -102,66 +95,54 @@ input {
 }
 
 .danger {
-  background: #8D0801;
+  background: #8d0801;
 }
 
 .error {
   text-align: center;
-  color: #8D0801;
+  color: #8d0801;
   font-size: 1.1rem;
 }
 
 .danger:hover {
   color: #f8f8f8;
-  background: #8D0801;
+  background: #8d0801;
 }
 
-
 @media (max-width: 500px) {
-
-  .store-name {
-    max-width: 50%;
-    font-size: 20px;
-    margin-right: 1%;
-    letter-spacing: -1.5px;
-  }
   .link {
     font-size: 11px;
   }
- 
+
   .form-container {
     width: 60%;
     height: 55%;
     margin-top: 40%;
     margin-left: 15%;
     margin-bottom: 13%;
-}
+  }
   .form-container h3 {
     font-size: 13px;
   }
-  
+
   .form-container form input {
     width: 100%;
     height: 20px;
-    padding: 0.3em ;
+    padding: 0.3em;
     font-size: 13px;
     align-self: center;
   }
-  
+
   .form-container form button {
     width: 45%;
     height: 27px;
     font-size: 11px;
-  }  
+  }
 }
 
 @media (min-width: 520px) {
-  .store-name {
-    max-width: 50%;
-    font-size: 28px;
-  }
   .link {
-    font-size: 16px
+    font-size: 16px;
   }
   .form-container {
     width: 60%;
@@ -169,22 +150,21 @@ input {
     margin-top: 35%;
     margin-left: 18%;
   }
-  
+
   .form-container h3 {
     font-size: 15px;
   }
-  
+
   .form-container form input {
     width: 80%;
     height: 15px;
     font-size: 15px;
   }
-  
-  .form-container form button {
 
+  .form-container form button {
     height: 35px;
     font-size: 13px;
-  }  
+  }
 }
 
 @media (min-width: 677px) {
@@ -205,12 +185,7 @@ input {
   }
 }
 
-
- @media (min-width: 1000px) {
-  .store-name {
-    max-width: 50%;
-    font-size: 35px;
-  }
+@media (min-width: 1000px) {
   .link {
     font-size: 18px;
   }
@@ -224,24 +199,22 @@ input {
     font-size: 15px;
     margin-top: 5%;
   }
-  
+
   .form-container form input {
     height: 30px;
-    padding: 0.5em ;
+    padding: 0.5em;
     height: 37px;
     font-size: 15px;
     align-self: center;
   }
-  
+
   .form-container form button {
-    
     height: 50px;
     font-size: 15px;
-  }  
-} 
+  }
+}
 
-
-@media (min-width: 1108px){
+@media (min-width: 1108px) {
   .form-container {
     align-self: center;
     padding: 1em;
@@ -275,7 +248,6 @@ input {
     margin-top: 10%;
     margin-left: 23%;
   }
-  
 }
 
 @media (min-width: 1600px) {
@@ -283,7 +255,6 @@ input {
     margin-top: 7%;
     margin-left: 23%;
   }
-  
 }
 
 @media (min-width: 1900px) {
@@ -291,7 +262,6 @@ input {
     margin-top: 10%;
     margin-left: 25%;
   }
-  
 }
 
 @media (min-width: 2300px) {
@@ -299,7 +269,6 @@ input {
     margin-top: 9%;
     margin-left: 25%;
   }
-  
 }
 
 @media (min-width: 2500px) {
