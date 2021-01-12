@@ -108,7 +108,6 @@ input {
   background: #8d0801;
 }
 
-
 @media only screen and (max-device-width: 280px) {
   .form-container {
     width: 50%;
@@ -116,30 +115,27 @@ input {
     margin-top: 10%;
     margin-left: 18%;
     margin-bottom: 13%;
-}
+  }
   .form-container h3 {
     font-size: 10px;
   }
-  
+
   .form-container form input {
     width: 100%;
     height: 20px;
-    padding: 0.2em ;
+    padding: 0.2em;
     font-size: 10px;
     align-self: center;
   }
-  
+
   .form-container form button {
     width: 49%;
     height: 23px;
     font-size: 10px;
-  }  
-
+  }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .form-container {
     width: 60%;
     height: 55%;
@@ -155,7 +151,7 @@ input {
     width: 100%;
     height: 20px;
 
-    padding: 0.3em ;
+    padding: 0.3em;
     font-size: 11px;
     align-self: center;
   }
@@ -167,7 +163,7 @@ input {
   }
 }
 
-@media only screen and (min-device-width : 540px) {
+@media only screen and (min-device-width: 540px) {
   .form-container {
     width: 60%;
     height: 48%;
@@ -183,15 +179,14 @@ input {
     width: 80%;
     height: 15px;
     font-size: 13px;
-  }
     height: 30px;
     width: 45%;
     font-size: 13px;
     margin-top: 5%;
-  }  
+  }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .form-container {
     width: 48%;
     height: 60%;
@@ -211,11 +206,10 @@ input {
     width: 45%;
     font-size: 15px;
     margin-top: 5%;
-  }  
-
+  }
 }
 
-@media only screen  and (min-width : 1224px) {
+@media only screen and (min-width: 1224px) {
   .form-container {
     width: 45%;
     height: 65%;
@@ -226,11 +220,11 @@ input {
   .form-container h3 {
     font-size: 16px;
   }
-  
+
   .form-container form input {
     font-size: 16px;
   }
-  
+
   .form-container form button {
     height: 40px;
     width: 35%;
@@ -238,5 +232,3 @@ input {
     margin-top: 5%;
   }
 }
-
-
